@@ -77,7 +77,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 </details>
 <details>
 <summary>I forgot my lock passcode</summary>
-<p>In DSM File Station, delete the <code>.jnology/library-prefs.json</code> file in the shared folder on your NAS, then delete and reinstall the app. Your hide and lock settings will be reset. The passcode is stored only as a hash, so even the developer can't recover it.</p>
+<p>In DSM File Station, delete the <code>.jnology/library-prefs.json</code> file in your NAS home folder (<code>home</code>), then delete and reinstall the app. Your hide and lock settings will be reset. The passcode is stored only as a hash, so even the developer can't recover it.</p>
 </details>
 
 <h2>Guide</h2>
@@ -102,7 +102,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <p>Tap Download on a video's screen to watch it without an internet connection. ‘Smaller’ asks your NAS to convert the video to about 720p first (Video Station only). Set the storage limit in Settings › Downloads.</p>
 
 <h3>Hiding and locking libraries</h3>
-<p>Turn libraries off in Settings › Visible Libraries to hide them. On iPhone and iPad, Settings › Lock lets you set a 4–8 digit passcode (or Face ID / Touch ID) for chosen libraries and for Settings. These settings are stored on your NAS (<code>.jnology/library-prefs.json</code>) and also apply to Apple TV.</p>
+<p>Turn libraries off in Settings › Visible Libraries to hide them. On iPhone and iPad, Settings › Lock lets you set a 4–8 digit passcode (or Face ID / Touch ID) for chosen libraries and for Settings. These settings are saved in your NAS home folder (<code>/home/.jnology/library-prefs.json</code>), so they apply to an Apple TV signed in with the same account, and other users can't see them.</p>
 
 <h3>Playback, Picture in Picture and AirPlay</h3>
 <p>Videos the device can play directly use the standard player; other formats are converted by your NAS, or played with the built-in VLC engine. On iPhone and iPad, Picture in Picture and AirPlay are supported. For series, the app can learn the opening after you watch the beginning of two episodes and skip it automatically.</p>
@@ -160,7 +160,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 </details>
 <details>
 <summary>잠금 비밀번호를 잊었어요</summary>
-<p>DSM File Station에서 NAS 공유 폴더 안의 <code>.jnology/library-prefs.json</code> 파일을 지운 뒤, 앱을 지웠다가 다시 설치하세요. 숨김·잠금 설정이 처음 상태로 돌아갑니다. 비밀번호는 해시값으로만 저장되어 개발자도 찾아 줄 수 없습니다.</p>
+<p>DSM File Station에서 NAS 홈 폴더(<code>home</code>) 안의 <code>.jnology/library-prefs.json</code> 파일을 지운 뒤, 앱을 지웠다가 다시 설치하세요. 숨김·잠금 설정이 처음 상태로 돌아갑니다. 비밀번호는 해시값으로만 저장되어 개발자도 찾아 줄 수 없습니다.</p>
 </details>
 
 <h2>사용 안내</h2>
@@ -185,7 +185,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <p>영상 화면에서 다운로드를 누르면 인터넷 없이 볼 수 있습니다. ‘작은 화질’은 NAS가 먼저 약 720p로 변환한 뒤 받습니다(Video Station 전용). 최대 용량은 설정 › 다운로드에서 정합니다.</p>
 
 <h3>라이브러리 숨기기·잠금</h3>
-<p>설정 › 보이는 라이브러리에서 끄면 숨겨집니다. iPhone·iPad의 설정 › 잠금에서 숫자 4~8자리 비밀번호(또는 Face ID·Touch ID)로 원하는 라이브러리와 설정 화면을 잠글 수 있습니다. 이 설정은 NAS(<code>.jnology/library-prefs.json</code>)에 저장되어 Apple TV에도 적용됩니다.</p>
+<p>설정 › 보이는 라이브러리에서 끄면 숨겨집니다. iPhone·iPad의 설정 › 잠금에서 숫자 4~8자리 비밀번호(또는 Face ID·Touch ID)로 원하는 라이브러리와 설정 화면을 잠글 수 있습니다. 이 설정은 로그인한 사용자의 NAS 홈 폴더(<code>/home/.jnology/library-prefs.json</code>)에 저장되어 같은 계정의 Apple TV에도 적용되고, 다른 사용자에게는 보이지 않습니다.</p>
 
 <h3>재생·작은 화면·AirPlay</h3>
 <p>기기가 바로 재생할 수 있는 영상은 기본 플레이어로, 다른 형식은 NAS 변환이나 내장 VLC 엔진으로 재생합니다. iPhone·iPad에서는 작은 화면(PiP)과 AirPlay를 지원합니다. 시리즈는 회차 두 개를 앞부분부터 보면 오프닝을 배워 자동으로 건너뜁니다.</p>
