@@ -279,6 +279,48 @@ html:not([data-store=live]) .store-live,
 html[data-store=live] .store-soon {
   display:none;
 }
+.beta-cta {
+  display:none;
+  align-items:center;
+  justify-content:center;
+  max-width:100%;
+  min-height:54px;
+  padding:8px 16px;
+  border-radius:9px;
+  background:var(--accent);
+  color:var(--bg);
+  font-size:13px;
+  font-weight:550;
+  line-height:1.35;
+  text-align:center;
+  transition:transform .2s,filter .2s;
+}
+html[data-beta=on] .beta-cta {
+  display:inline-flex;
+}
+a.beta-cta:hover {
+  color:var(--bg);
+  filter:brightness(1.06);
+  transform:translateY(-2px);
+}
+.beta-note {
+  display:none;
+}
+html[data-beta=on] .beta-note {
+  display:block;
+}
+.hero .beta-note {
+  max-width:100%;
+  margin:14px auto 0;
+  font-size:12px;
+  line-height:1.5;
+  color:var(--muted);
+}
+.final-cta .beta-cta {
+  margin-top:28px;
+  margin-left:12px;
+  vertical-align:middle;
+}
 .app-store.store-soon {
   max-width:100%;
   color:var(--muted);
@@ -1403,6 +1445,22 @@ details[open] .faq-plus:after {
   }
   .app-store small {
     font-size:9px;
+  }
+  .beta-cta {
+    min-height:50px;
+    padding:7px 14px;
+    border-radius:8px;
+    font-size:12px;
+  }
+  .hero .beta-note {
+    font-size:11px;
+    margin-top:12px;
+    padding-inline:4px;
+  }
+  .final-cta .beta-cta {
+    margin-top:16px;
+    margin-left:0;
+    max-width:min(340px,calc(100% - 48px));
   }
   .hero-note {
     font-size:11px;
