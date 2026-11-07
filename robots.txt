@@ -1,0 +1,6 @@
+# Crawlers read /robots.txt at the host root, not /jnology-site/robots.txt.
+# On GitHub Pages, also publish this at the host root or submit the sitemap directly.
+User-agent: *
+Allow: /
+
+Sitemap: https://jaydenhsong.github.io/jnology-site/sitemap.xml
