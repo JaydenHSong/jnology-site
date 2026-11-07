@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaydenhsong.github.io/jnology-site/sitemap.xml
+Sitemap: https://ownstream.app/sitemap.xml
