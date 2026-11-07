@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- Set data-store to live at launch, matching index.html. -->
+<html lang="en" data-store="soon" data-title-en="Watch your Synology videos away from home (QuickConnect, DDNS)" data-title-ko="집 밖에서 Synology 영상 보기 (QuickConnect·DDNS)" data-description-en="Connect to your Synology NAS away from home with QuickConnect or DDNS. Learn about saved sign-ins, two-step verification and offline downloads on iPhone and iPad." data-description-ko="QuickConnect·DDNS로 집 밖에서 Synology NAS에 연결하세요. 저장된 로그인, 2단계 인증, 인증서 신뢰와 iPhone·iPad 오프라인 다운로드를 안내합니다.">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Watch your Synology videos away from home (QuickConnect, DDNS)</title>
+<meta name="description" content="Connect to your Synology NAS away from home with QuickConnect or DDNS. Learn about saved sign-ins, two-step verification and offline downloads on iPhone and iPad."><meta name="theme-color" content="#080c12"><meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://ownstream.app/guides/watch-away-from-home.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Ownstream"><meta property="og:title" content="Watch your Synology videos away from home (QuickConnect, DDNS)"><meta property="og:description" content="Connect to your Synology NAS away from home with QuickConnect or DDNS. Learn about saved sign-ins, two-step verification and offline downloads on iPhone and iPad."><meta property="og:url" content="https://ownstream.app/guides/watch-away-from-home.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:image" content="https://ownstream.app/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Watch your Synology videos away from home (QuickConnect, DDNS)"><meta name="twitter:description" content="Connect to your Synology NAS away from home with QuickConnect or DDNS. Learn about saved sign-ins, two-step verification and offline downloads on iPhone and iPad."><meta name="twitter:image" content="https://ownstream.app/assets/og.jpg"><meta name="twitter:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"><link rel="stylesheet" href="../style.css"><script src="../lang.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://ownstream.app/guides/watch-away-from-home.html",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my home IP address fail away from home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your local IP address works on your home network. Away from home, use a DDNS address or QuickConnect ID with remote access configured on your NAS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can QuickConnect playback stutter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a direct connection is not possible, QuickConnect goes through a Synology relay, which can be slower. Lower playback quality, or configure router port forwarding and DDNS for a direct connection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I watch without an internet connection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Download videos on iPhone or iPad before heading out. Tap Download on a video’s screen and set the storage limit in Settings › Downloads. The Smaller option requires Video Station."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="document-page guide-page">
+<a class="skip-link" href="#main"><span lang="en" data-i18n>Skip to content</span><span lang="ko" data-i18n>본문으로 건너뛰기</span></a><header class="site-header"><div class="header-inner"><a class="brand" href="../"><img src="../assets/app-icon.png" alt="" width="34" height="34">Ownstream</a><nav aria-label="Main / 주요 메뉴"><a class="features-link" href="../#features"><span lang="en" data-i18n>Features</span><span lang="ko" data-i18n>주요 기능</span></a><a href="../support.html"><span lang="en" data-i18n>Support</span><span lang="ko" data-i18n>지원</span></a><a href="../privacy.html" ><span lang="en" data-i18n>Privacy</span><span lang="ko" data-i18n>개인정보</span></a></nav><div class="lang-switch" role="group" aria-label="Language / 언어"><a href="?lang=en" lang="en" data-lang="en">EN</a><a href="?lang=ko" lang="ko" data-lang="ko">한국어</a></div></div></header>
+<main id="main">
+<article class="document wrap">
+<p class="eyebrow"><span lang="en" data-i18n>GUIDES</span><span lang="ko" data-i18n>가이드</span></p>
+<h1><span lang="en" data-i18n>Watch your Synology videos away from home (QuickConnect, DDNS)</span><span lang="ko" data-i18n>집 밖에서 Synology 영상 보기 (QuickConnect·DDNS)</span></h1>
+<p><span lang="en" data-i18n>To watch your Synology videos away from home with Ownstream, configure remote access on your NAS and connect using a QuickConnect ID or DDNS address. Save sign-ins to switch between home and away, or download videos to your iPhone or iPad before leaving to watch offline.</span><span lang="ko" data-i18n>집 밖에서 Ownstream으로 Synology 영상을 보려면 NAS의 외부 접속을 설정한 뒤 QuickConnect ID나 DDNS 주소로 연결하세요. 집과 외부 로그인을 저장해 전환하거나, 외출 전에 iPhone·iPad에 영상을 내려받아 오프라인으로 볼 수 있습니다.</span></p>
+<h2><span lang="en" data-i18n>Choose an address</span><span lang="ko" data-i18n>연결 주소 선택</span></h2>
+<ul>
+<li><span lang="en" data-i18n>At home: use your NAS local IP address, such as <code>192.168.0.10</code>. A local IP address does not work away from home.</span><span lang="ko" data-i18n>집 안에서는 <code>192.168.0.10</code> 같은 NAS 내부 IP 주소를 쓰세요. 내부 IP 주소로는 집 밖에서 연결할 수 없습니다.</span></li>
+<li><span lang="en" data-i18n>Away: enter a QuickConnect ID or a DDNS address such as <code>name.synology.me:5001</code>. An address beginning with <code>https://</code> is also supported.</span><span lang="ko" data-i18n>집 밖에서는 QuickConnect ID 또는 <code>name.synology.me:5001</code> 같은 DDNS 주소를 입력하세요. <code>https://</code>로 시작하는 주소도 지원합니다.</span></li>
+<li><span lang="en" data-i18n>Without a port or scheme, Ownstream uses HTTPS on DSM port 5001. If you changed the DSM port, enter your custom port.</span><span lang="ko" data-i18n>포트와 scheme을 생략하면 Ownstream은 HTTPS와 DSM 포트 5001을 사용합니다. DSM 포트를 바꿨다면 해당 포트를 입력하세요.</span></li>
+</ul>
+<h2><span lang="en" data-i18n>Set up away-from-home viewing</span><span lang="ko" data-i18n>집 밖에서 보기 위한 설정 순서</span></h2>
+<ol>
+<li><span lang="en" data-i18n>Configure remote access on your NAS, then enter your QuickConnect ID or DDNS address on the Ownstream sign-in screen.</span><span lang="ko" data-i18n>NAS의 외부 접속을 설정한 뒤 Ownstream 로그인 화면에 QuickConnect ID나 DDNS 주소를 입력하세요.</span></li>
+<li><span lang="en" data-i18n>Sign in with your existing DSM account. If two-step verification is enabled, enter the 6-digit code from your authenticator app.</span><span lang="ko" data-i18n>기존 DSM 계정으로 로그인하세요. 2단계 인증을 켰다면 인증 앱의 6자리 코드를 입력하세요.</span></li>
+<li><span lang="en" data-i18n>For a self-signed certificate, verify the NAS address and certificate fingerprint before trusting it. The certificate pin stays only in this device’s Keychain.</span><span lang="ko" data-i18n>자체 서명 인증서라면 NAS 주소와 인증서 지문을 확인한 뒤 신뢰하세요. 인증서 핀은 이 기기의 Keychain에만 저장됩니다.</span></li>
+<li><span lang="en" data-i18n>Save your sign-ins so you can switch between the home IP connection and the away connection in a tap. Sign-in details are stored only in the device’s Keychain.</span><span lang="ko" data-i18n>집 안 IP 연결과 외부 연결의 로그인을 저장해 한 번에 전환하세요. 로그인 정보는 기기의 Keychain에만 저장됩니다.</span></li>
+<li><span lang="en" data-i18n>Open your library, choose a video and press play. If QuickConnect uses a relay, high-quality video may stutter; try a lower playback quality.</span><span lang="ko" data-i18n>라이브러리에서 영상을 골라 재생하세요. QuickConnect가 중계 서버를 거치면 고화질 영상이 끊길 수 있으므로 재생 화질을 낮춰 보세요.</span></li>
+<li><span lang="en" data-i18n>For offline viewing, tap Download on a video’s screen on iPhone or iPad before heading out. Set the storage limit in Settings › Downloads.</span><span lang="ko" data-i18n>오프라인으로 보려면 외출 전에 iPhone·iPad의 영상 화면에서 다운로드를 누르세요. 설정 › 다운로드에서 최대 저장 용량을 정할 수 있습니다.</span></li>
+</ol>
+<h2><span lang="en" data-i18n>When QuickConnect is slow</span><span lang="ko" data-i18n>QuickConnect가 느릴 때</span></h2>
+<p><span lang="en" data-i18n>QuickConnect uses a Synology relay when a direct connection is not possible, and relays can be slower. At home, use your NAS IP address. Away from home, the support guide recommends router port forwarding and DDNS for a faster direct connection; lowering playback quality can reduce stuttering.</span><span lang="ko" data-i18n>QuickConnect는 직접 연결할 수 없을 때 Synology 중계 서버를 사용하며, 중계 연결은 느릴 수 있습니다. 집 안에서는 NAS IP 주소를 사용하세요. 지원 문서에서는 외부에서 더 빠르게 직접 연결하려면 공유기 포트 포워딩과 DDNS를 설정하도록 안내합니다. 재생 화질을 낮추면 끊김을 줄일 수 있습니다.</span></p>
+<h2><span lang="en" data-i18n>Certificate trust and offline downloads</span><span lang="ko" data-i18n>인증서 신뢰와 오프라인 다운로드</span></h2>
+<p><span lang="en" data-i18n>Playback and background downloads may fail with self-signed HTTPS. In that case, install a system-trusted certificate in DSM. A failure never makes Ownstream switch to HTTP; HTTP is used only when you explicitly choose to connect without encryption on the sign-in screen.</span><span lang="ko" data-i18n>자체 서명 HTTPS에서는 재생이나 백그라운드 다운로드가 실패할 수 있습니다. 이 경우 DSM에 시스템이 신뢰하는 인증서를 설치하세요. 실패해도 Ownstream이 HTTP로 자동 전환하지는 않습니다. HTTP는 로그인 화면에서 암호화 없이 연결을 직접 선택한 경우에만 사용합니다.</span></p>
+<p><span lang="en" data-i18n>Offline downloads are available on iPhone and iPad. The Smaller download option asks the NAS to convert the video to about 720p first and is available only with Video Station.</span><span lang="ko" data-i18n>오프라인 다운로드는 iPhone·iPad에서 지원합니다. 작은 화질 옵션은 NAS에서 먼저 약 720p로 변환한 뒤 다운로드하며, Video Station이 있을 때만 사용할 수 있습니다.</span></p>
+<h2><span lang="en" data-i18n>Frequently asked questions</span><span lang="ko" data-i18n>자주 묻는 질문</span></h2>
+<details>
+<summary><span lang="en" data-i18n>Why does my home IP address fail away from home?</span><span lang="ko" data-i18n>집에서 쓰던 IP 주소로 밖에서 연결되지 않는 이유는 무엇인가요?</span></summary>
+<p><span lang="en" data-i18n>Your local IP address works on your home network. Away from home, use a DDNS address or QuickConnect ID with remote access configured on your NAS.</span><span lang="ko" data-i18n>내부 IP 주소는 집 안 네트워크에서 사용할 수 있습니다. 집 밖에서는 NAS의 외부 접속을 설정하고 DDNS 주소나 QuickConnect ID를 사용하세요.</span></p>
+</details>
+<details>
+<summary><span lang="en" data-i18n>Why can QuickConnect playback stutter?</span><span lang="ko" data-i18n>QuickConnect 재생이 끊기는 이유는 무엇인가요?</span></summary>
+<p><span lang="en" data-i18n>When a direct connection is not possible, QuickConnect goes through a Synology relay, which can be slower. Lower playback quality, or configure router port forwarding and DDNS for a direct connection.</span><span lang="ko" data-i18n>직접 연결할 수 없으면 QuickConnect가 Synology 중계 서버를 거치며 속도가 느려질 수 있습니다. 재생 화질을 낮추거나 공유기 포트 포워딩과 DDNS를 설정해 직접 연결하세요.</span></p>
+</details>
+<details>
+<summary><span lang="en" data-i18n>Can I watch without an internet connection?</span><span lang="ko" data-i18n>인터넷이 없어도 볼 수 있나요?</span></summary>
+<p><span lang="en" data-i18n>Yes. Download videos on iPhone or iPad before heading out. Tap Download on a video’s screen and set the storage limit in Settings › Downloads. The Smaller option requires Video Station.</span><span lang="ko" data-i18n>네. 외출 전에 iPhone·iPad에 영상을 내려받으세요. 영상 화면에서 다운로드를 누르고 설정 › 다운로드에서 최대 용량을 정할 수 있습니다. 작은 화질 옵션에는 Video Station이 필요합니다.</span></p>
+</details>
+<p><a href="../support.html"><span lang="en" data-i18n>More setup help and troubleshooting →</span><span lang="ko" data-i18n>설정 도움말과 문제 해결 더 보기 →</span></a></p>
+</article>
+<section class="final-cta wrap" aria-labelledby="guide-cta-title">
+<img src="../assets/app-icon.png" alt="" width="72" height="72" loading="lazy">
+<p class="eyebrow">Ownstream</p>
+<h2 id="guide-cta-title"><span lang="en" data-i18n>Your NAS videos.<br>Ready to watch.</span><span lang="ko" data-i18n>내 NAS 영상,<br>이제 감상하세요.</span></h2>
+<p class="free-note"><span lang="en" data-i18n>Free on iPhone, iPad and Apple TV</span><span lang="ko" data-i18n>iPhone·iPad·Apple TV에서 무료</span></p>
+<span class="app-store store-soon"><span lang="en" data-i18n>Coming soon to the App Store</span><span lang="ko" data-i18n>App Store 출시 예정</span></span><a class="app-store store-live" href="https://apps.apple.com/app/id6830990953?pt=128747158&amp;ct=site-guide-away" aria-label="Download Ownstream on the App Store" data-label-en="Download Ownstream on the App Store" data-label-ko="App Store에서 Ownstream 다운로드"><svg viewBox="0 0 24 29" aria-hidden="true"><path fill="currentColor" d="M19.6 15.4c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.7-2.4-4.5-2.4-1.9-.2-3.8 1.1-4.8 1.1s-2.6-1.1-4.2-1c-2.2 0-4.2 1.3-5.3 3.2-2.2 3.9-.6 9.6 1.6 12.8 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1s2.6 1 4.3 1c1.8 0 2.9-1.5 3.9-3 .9-1.2 1.5-2.6 1.8-3.5-.1 0-3.6-1.4-3.6-5.7ZM16.4 6.3c.9-1.1 1.6-2.7 1.4-4.3-1.3.1-2.9.9-3.9 2-1 1.1-1.8 2.7-1.5 4.2 1.5.1 3-.8 4-1.9Z"/></svg><span><small><span lang="en" data-i18n>Download on the</span><span lang="ko" data-i18n>지금 다운로드하세요</span></small><strong>App Store</strong></span></a>
+</section>
+</main>
+<footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="../"><img src="../assets/app-icon.png" alt="" width="34" height="34">Ownstream</a><p><span lang="en" data-i18n>Your collection. Your connection. Your cinema.</span><span lang="ko" data-i18n>내가 모은 영상. 내 NAS. 나만의 영화관.</span></p></div><nav class="footer-guides" aria-labelledby="footer-guides-title">
+<h2 id="footer-guides-title"><span lang="en" data-i18n>Guides</span><span lang="ko" data-i18n>가이드</span></h2>
+<ul>
+<li><a href="video-station-alternative.html"><span lang="en" data-i18n>Video Station alternative for DSM 7.2.2 and later</span><span lang="ko" data-i18n>DSM 7.2.2 이후 Video Station 대안</span></a></li>
+<li><a href="synology-on-apple-tv.html"><span lang="en" data-i18n>Watch Synology NAS videos on Apple TV</span><span lang="ko" data-i18n>Synology NAS 영상을 Apple TV로 보기</span></a></li>
+<li><a href="watch-away-from-home.html"><span lang="en" data-i18n>Watch your Synology videos away from home (QuickConnect, DDNS)</span><span lang="ko" data-i18n>집 밖에서 Synology 영상 보기 (QuickConnect·DDNS)</span></a></li>
+</ul>
+</nav>
+<div class="footer-bottom"><p>© Ownstream</p><nav aria-label="Footer / 하단 메뉴"><a href="../support.html"><span lang="en" data-i18n>Support</span><span lang="ko" data-i18n>지원</span></a><a href="../privacy.html"><span lang="en" data-i18n>Privacy</span><span lang="ko" data-i18n>개인정보 처리방침</span></a></nav><div class="lang-switch" role="group" aria-label="Language / 언어"><a href="?lang=en" lang="en" data-lang="en">EN</a><a href="?lang=ko" lang="ko" data-lang="ko">한국어</a></div></div><p class="disclaimer"><span lang="en" data-i18n>Ownstream is an independent app and is not affiliated with Synology Inc. Synology, DSM, Video Station and QuickConnect are trademarks of Synology Inc.</span><span lang="ko" data-i18n>Ownstream은 Synology Inc.와 제휴 관계가 없는 독립 앱입니다. Synology, DSM, Video Station 및 QuickConnect는 Synology Inc.의 상표입니다.</span></p></footer>
+</body>
+</html>

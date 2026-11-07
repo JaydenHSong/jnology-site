@@ -1824,3 +1824,35 @@ details[open] .faq-plus:after {
     transition:none!important;
   }
 }
+
+/* Search guides share the document layout and the site's footer. */
+.footer-guides {
+  margin-top:28px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+.footer-guides h2 {
+  font-size:14px;
+  line-height:1.5;
+  letter-spacing:0;
+}
+.footer-guides ul {
+  display:grid;
+  gap:8px;
+  list-style:none;
+  margin:12px 0 0;
+  padding:0;
+}
+.footer-guides a {
+  display:inline-block;
+  padding-block:5px;
+  font-size:13px;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.footer-guides a:hover {
+  color:var(--accent);
+}
+.guide-page h1 {
+  overflow-wrap:anywhere;
+}
