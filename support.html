@@ -1,41 +1,12 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Help — Jnology</title>
-<meta name="description" content="Self-help guide and troubleshooting for Jnology, a free video player for your Synology NAS.">
-<!-- Content mirrors the in-app Help (App/Store/AppInfoContent.swift). -->
-<style>
-:root { color-scheme: light dark; --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --card: #f5f5f7; --accent: #0a66d8; }
-@media (prefers-color-scheme: dark) { :root { --bg: #000000; --fg: #f5f5f7; --muted: #a1a1a6; --line: #2c2c2e; --card: #1c1c1e; --accent: #4c9bff; } }
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, "Noto Sans KR", sans-serif; -webkit-text-size-adjust: 100%; }
-main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 15px; margin-bottom: 32px; }
-a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
-h1 { font-size: 32px; line-height: 1.2; margin: 0 0 12px; }
-h2 { font-size: 22px; margin: 40px 0 12px; }
-h3 { font-size: 17px; margin: 20px 0 4px; }
-p { margin: 8px 0; }
-.notice { background: var(--card); border-radius: 14px; padding: 16px 20px; }
-details { border-top: 1px solid var(--line); padding: 12px 0; }
-details:last-of-type { border-bottom: 1px solid var(--line); }
-summary { cursor: pointer; font-weight: 600; }
-details > *:not(summary) { margin-top: 8px; }
-ul { padding-left: 22px; margin: 6px 0; } li { margin: 4px 0; }
-code { font-size: 15px; overflow-wrap: anywhere; }
-hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 40px; }
-footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
-</style>
-</head>
-<body>
-<main>
-<nav><a href="./">Jnology</a><a href="support.html">Help &amp; Support</a><a href="privacy.html">Privacy Policy</a><a href="#ko">한국어</a></nav>
-
-<article lang="en">
+<html lang="en" data-title-en="Help — Ownstream" data-title-ko="도움말 — Ownstream" data-description-en="Guides and troubleshooting for watching your Synology NAS videos with Ownstream." data-description-ko="Ownstream 연결, 재생, 자막, 다운로드 사용 안내와 문제 해결.">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Help — Ownstream</title>
+<meta name="description" content="Guides and troubleshooting for watching your Synology NAS videos with Ownstream."><meta name="theme-color" content="#080c12"><meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://jaydenhsong.github.io/jnology-site/support.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Ownstream"><meta property="og:title" content="Help — Ownstream"><meta property="og:description" content="Guides and troubleshooting for watching your Synology NAS videos with Ownstream."><meta property="og:url" content="https://jaydenhsong.github.io/jnology-site/support.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:image" content="https://jaydenhsong.github.io/jnology-site/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Help — Ownstream"><meta name="twitter:description" content="Guides and troubleshooting for watching your Synology NAS videos with Ownstream."><meta name="twitter:image" content="https://jaydenhsong.github.io/jnology-site/assets/og.jpg"><meta name="twitter:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="stylesheet" href="style.css"><script src="lang.js"></script></head><body class="document-page"><a class="skip-link" href="#main"><span lang="en" data-i18n>Skip to content</span><span lang="ko" data-i18n>본문으로 건너뛰기</span></a><header class="site-header"><div class="header-inner"><a class="brand" href="./"><img src="assets/app-icon.png" alt="" width="34" height="34">Ownstream</a><nav aria-label="Main / 주요 메뉴"><a class="features-link" href="./#features"><span lang="en" data-i18n>Features</span><span lang="ko" data-i18n>주요 기능</span></a><a href="support.html" aria-current="page"><span lang="en" data-i18n>Support</span><span lang="ko" data-i18n>지원</span></a><a href="privacy.html" ><span lang="en" data-i18n>Privacy</span><span lang="ko" data-i18n>개인정보</span></a></nav><div class="lang-switch" role="group" aria-label="Language / 언어"><a href="?lang=en" lang="en" data-lang="en">EN</a><a href="?lang=ko" lang="ko" data-lang="ko">한국어</a></div></div></header><main id="main" class="document wrap"><p class="eyebrow"><span lang="en" data-i18n>HERE TO HELP</span><span lang="ko" data-i18n>도움이 필요할 때</span></p><!-- Original bilingual article content preserved. Keep privacy copy in sync with App/Store/AppInfoContent.swift. --><article lang="en" data-i18n>
 <h1>Help</h1>
-<p class="notice">Most questions are answered on this page and in the in-app Help (Settings › Help). Still stuck, or found a bug? Email <a href="mailto:hoon.iccorp@gmail.com">hoon.iccorp@gmail.com</a>. Jnology is a free app made by one developer, so replies may take a few days.</p>
+<p class="notice">Most questions are answered on this page and in the in-app Help (Settings › Help). Still stuck, or found a bug? Email <a href="mailto:hoon.iccorp@gmail.com">hoon.iccorp@gmail.com</a>. Ownstream is a free app made by one developer, so replies may take a few days.</p>
 
 <h2>Troubleshooting</h2>
 <details open>
@@ -45,7 +16,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <li>A 403 error usually means you've reached the NAS's web server (port 80 or 443) instead of DSM. Adding the DSM port fixes it.</li>
 <li>If you've changed your DSM ports, enter your custom port.</li>
 <li>Away from home you can't use the local IP address. Use a DDNS address or a QuickConnect ID.</li>
-<li>On iPhone or iPad, if it still fails on the same Wi-Fi, check that Jnology is turned on in the Settings app › Privacy &amp; Security › Local Network.</li>
+<li>On iPhone or iPad, if it still fails on the same Wi-Fi, check that Ownstream is turned on in the Settings app › Privacy &amp; Security › Local Network.</li>
 </ul>
 </details>
 <details>
@@ -82,7 +53,9 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 
 <h2>Guide</h2>
 <h3>Connecting to your NAS</h3>
-<p>Enter your NAS address on the sign-in screen. On your home Wi-Fi, the IP address alone (e.g. <code>192.168.0.10</code>) is enough. If you leave out the port, the app tries the default DSM port 5000 (http) first, then 5001 (https). You can also enter a DDNS address (e.g. <code>name.synology.me:5001</code>), an address starting with https://, or a QuickConnect ID. If your DSM account uses two-step verification, also enter the 6-digit code from your authenticator app. Your sign-in details are stored only in the device's Keychain.</p>
+<p>Enter your NAS address on the sign-in screen. On your home Wi-Fi, the IP address alone (e.g. <code>192.168.0.10</code>) is enough. Without a port or scheme, the app uses DSM port 5001 (HTTPS). For a self-signed certificate, verify the address and fingerprint before trusting it; the pin stays only in this device’s Keychain. HTTP is used only when you explicitly choose to connect without encryption on the sign-in screen. You can also enter a DDNS address (e.g. <code>name.synology.me:5001</code>), an address starting with https://, or a QuickConnect ID. If your DSM account uses two-step verification, also enter the 6-digit code from your authenticator app. Your sign-in details are stored only in the device's Keychain.</p>
+
+<p>Other DSM users who can read the shared folder can also read file-mode watch history files there. Playback and background downloads may fail with self-signed HTTPS; install a system-trusted certificate in DSM in that case. Failure never causes the app to switch to HTTP.</p>
 
 <h3>Using without Video Station (File Mode)</h3>
 <p>Video Station can't be installed on DSM 7.2.2 and later. When you connect to a NAS without Video Station, the app switches to File Mode automatically and builds your libraries from the video files in your NAS folders. Movies, TV Shows and Home Videos are always in the menu — open one that has no folder yet and the app shows video folders it found on your NAS (for example <code>/video/Movies</code>) so you can connect one with a single tap, or choose a folder yourself. In Settings › Library Folders you can change those folders and use ‘Add Library’ to create more libraries from any folder, with your own name and type; custom libraries can be renamed, reordered or deleted, and deleting a library never touches the files on your NAS. TV shows are read in the structure ‘TV folder/Show name/(Season folder)/Episode files’. Your library list is saved in your DSM home folder (<code>/home/.jnology</code>) so your iPhone, iPad and Apple TV show the same libraries; on Apple TV you can also connect folders and add libraries in Settings › Libraries. Watch progress is saved in the <code>.jnology</code> folder on your NAS so it's shared with your other devices. The account needs File Station permission.</p>
@@ -111,12 +84,8 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <p>Embedded subtitles and subtitle files with the same name next to the video (e.g. <code>VideoName.en.srt</code>) turn on automatically. On iPhone and iPad you can adjust size, color, position and sync, and search online through your NAS's Video Station subtitle plug-ins.</p>
 
 <h3>Apple TV</h3>
-<p>Jnology is also available on Apple TV. Get it once and use it on iPhone, iPad and Apple TV with the same Apple Account.</p>
-</article>
-
-<hr>
-
-<article id="ko" lang="ko">
+<p>Ownstream is also available on Apple TV. Get it once and use it on iPhone, iPad and Apple TV with the same Apple Account.</p>
+</article><article lang="ko" data-i18n>
 <h1>도움말</h1>
 <p class="notice">대부분의 궁금한 점은 이 페이지와 앱 안 도움말(설정 › 도움말)에 있습니다. 그래도 해결되지 않거나 버그를 찾으셨다면 <a href="mailto:hoon.iccorp@gmail.com">hoon.iccorp@gmail.com</a>으로 메일 주세요. 개발자 한 명이 만드는 무료 앱이라 답장이 며칠 걸릴 수 있습니다.</p>
 
@@ -128,7 +97,7 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <li>403 오류는 보통 DSM이 아닌 NAS 웹 서버(포트 80·443)에 연결되었을 때 납니다. DSM 포트를 붙이면 해결됩니다.</li>
 <li>DSM 포트를 바꿨다면 바꾼 포트를 직접 넣어야 합니다.</li>
 <li>집 밖에서는 내부 IP로 연결할 수 없습니다. DDNS 주소나 QuickConnect ID를 쓰세요.</li>
-<li>iPhone·iPad에서 같은 Wi-Fi인데도 안 되면 설정 앱 › 개인정보 보호 및 보안 › 로컬 네트워크에서 Jnology가 켜져 있는지 확인하세요.</li>
+<li>iPhone·iPad에서 같은 Wi-Fi인데도 안 되면 설정 앱 › 개인정보 보호 및 보안 › 로컬 네트워크에서 Ownstream가 켜져 있는지 확인하세요.</li>
 </ul>
 </details>
 <details>
@@ -165,7 +134,9 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 
 <h2>사용 안내</h2>
 <h3>NAS에 연결하기</h3>
-<p>로그인 화면에 NAS 주소를 넣습니다. 집 안 Wi-Fi에서는 IP 주소(예: <code>192.168.0.10</code>)만 넣어도 됩니다. 포트를 빼면 DSM 기본 포트 5000(http)을 먼저, 안 되면 5001(https)을 시도합니다. DDNS 주소(예: <code>name.synology.me:5001</code>), https://로 시작하는 주소, QuickConnect ID도 쓸 수 있습니다. 2단계 인증을 켜 두었다면 인증 앱의 6자리 코드도 함께 넣으세요. 로그인 정보는 기기의 키체인에만 저장됩니다.</p>
+<p>로그인 화면에 NAS 주소를 넣습니다. 집 안 Wi-Fi에서는 IP 주소(예: <code>192.168.0.10</code>)만 넣어도 됩니다. 포트와 scheme을 빼면 DSM 기본 포트 5001(HTTPS)을 사용합니다. 자체 서명 인증서는 주소와 지문을 확인한 뒤 신뢰하세요. 인증서 핀은 이 기기 전용 Keychain에만 저장됩니다. HTTP는 로그인 화면에서 암호화 없이 연결을 직접 선택한 경우에만 사용합니다. DDNS 주소(예: <code>name.synology.me:5001</code>), https://로 시작하는 주소, QuickConnect ID도 쓸 수 있습니다. 2단계 인증을 켜 두었다면 인증 앱의 6자리 코드도 함께 넣으세요. 로그인 정보는 기기의 키체인에만 저장됩니다.</p>
+
+<p>파일 모드의 공유 폴더 시청 기록은 해당 공유 폴더를 읽을 수 있는 다른 DSM 사용자도 열람할 수 있습니다. 자체 서명 HTTPS에서는 재생·백그라운드 다운로드가 실패할 수 있으며, 이 경우 DSM에 시스템이 신뢰하는 인증서를 설치하세요. 앱은 실패 때문에 HTTP로 바꾸지 않습니다.</p>
 
 <h3>Video Station 없이 쓰기 (파일 모드)</h3>
 <p>DSM 7.2.2부터는 Video Station 패키지를 설치할 수 없습니다. Video Station이 없는 NAS에 연결하면 앱이 자동으로 파일 모드가 되어, NAS 폴더의 영상 파일로 라이브러리를 만듭니다. 메뉴에는 영화 · TV 프로그램 · 홈 비디오가 늘 있고, 아직 폴더가 없는 라이브러리를 열면 앱이 NAS에서 찾은 영상 폴더(예: <code>/video/Movies</code>)를 보여 주어 한 번에 연결하거나 직접 폴더를 고를 수 있습니다. 설정 › 라이브러리 폴더에서 폴더를 바꾸고, ‘라이브러리 추가’로 원하는 폴더를 이름과 종류를 정해 라이브러리로 더 만들 수 있습니다. 만든 라이브러리는 이름·순서를 바꾸거나 지울 수 있고, 지워도 NAS 파일은 그대로입니다. TV 프로그램은 ‘TV 폴더/프로그램 이름/(시즌 폴더)/회차 파일’ 구조를 읽습니다. 라이브러리 목록은 DSM 내 홈 폴더(<code>/home/.jnology</code>)에 저장되어 iPhone·iPad·Apple TV에 같게 보이며, Apple TV에서도 설정 › 라이브러리에서 폴더를 연결하고 라이브러리를 추가할 수 있습니다. 이어보기 기록은 NAS의 <code>.jnology</code> 폴더에 저장되어 다른 기기와 공유됩니다. 이 계정에 File Station 권한이 있어야 합니다.</p>
@@ -194,10 +165,5 @@ footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
 <p>영상 안의 자막과, 영상 옆에 같은 이름으로 둔 자막 파일(예: <code>영상이름.ko.srt</code>)은 자동으로 켜집니다. iPhone·iPad에서는 크기·색·위치·싱크를 바꾸고, NAS의 Video Station 자막 플러그인으로 인터넷에서 자막을 찾을 수 있습니다.</p>
 
 <h3>Apple TV</h3>
-<p>Jnology는 Apple TV 앱도 있습니다. 한 번 받으면 같은 Apple 계정의 iPhone·iPad·Apple TV에서 모두 쓸 수 있습니다.</p>
-</article>
-
-<footer>Jnology is an independent app and is not affiliated with Synology Inc. Synology, DSM, Video Station and QuickConnect are trademarks of Synology Inc.</footer>
-</main>
-</body>
-</html>
+<p>Ownstream는 Apple TV 앱도 있습니다. 한 번 받으면 같은 Apple 계정의 iPhone·iPad·Apple TV에서 모두 쓸 수 있습니다.</p>
+</article></main><footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="./"><img src="assets/app-icon.png" alt="" width="34" height="34">Ownstream</a><p><span lang="en" data-i18n>Your collection. Your connection. Your cinema.</span><span lang="ko" data-i18n>내가 모은 영상. 내 NAS. 나만의 영화관.</span></p></div><div class="footer-bottom"><p>© Ownstream</p><nav aria-label="Footer / 하단 메뉴"><a href="support.html"><span lang="en" data-i18n>Support</span><span lang="ko" data-i18n>지원</span></a><a href="privacy.html"><span lang="en" data-i18n>Privacy</span><span lang="ko" data-i18n>개인정보 처리방침</span></a></nav><div class="lang-switch" role="group" aria-label="Language / 언어"><a href="?lang=en" lang="en" data-lang="en">EN</a><a href="?lang=ko" lang="ko" data-lang="ko">한국어</a></div></div><p class="disclaimer"><span lang="en" data-i18n>Ownstream is an independent app and is not affiliated with Synology Inc. Synology, DSM, Video Station and QuickConnect are trademarks of Synology Inc.</span><span lang="ko" data-i18n>Ownstream은 Synology Inc.와 제휴 관계가 없는 독립 앱입니다. Synology, DSM, Video Station 및 QuickConnect는 Synology Inc.의 상표입니다.</span></p></footer></body></html>
