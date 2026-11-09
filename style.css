@@ -310,6 +310,15 @@ a.beta-cta:hover {
 html[data-beta=on]:not([data-store=live]) .beta-note {
   display:block;
 }
+.beta-show {
+  display:none;
+}
+html[data-beta=on]:not([data-store=live]) .beta-show {
+  display:inline;
+}
+html[data-beta=on]:not([data-store=live]) .beta-hide {
+  display:none;
+}
 .hero .beta-note {
   max-width:100%;
   margin:14px auto 0;
