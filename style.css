@@ -388,6 +388,28 @@ html[data-beta=on]:not([data-store=live]) .beta-signup {
   font-size:12px;
   line-height:1.5;
 }
+.setup-note {
+  width:100%;
+  max-width:520px;
+  margin:14px auto 0;
+  padding:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+  text-align:center;
+  text-wrap:balance;
+  overflow-wrap:break-word;
+}
+.setup-note strong {
+  font-weight:550;
+  color:var(--text);
+}
+.final-cta>p.setup-note:not(.eyebrow) {
+  margin:14px auto 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
 .beta-howto {
   display:none;
   max-width:min(34rem,100%);
