@@ -388,6 +388,7 @@ html[data-beta=on]:not([data-store=live]) .beta-signup {
   font-size:12px;
   line-height:1.5;
 }
+.download-actions .beta-note.beta-tv-note { margin:2px auto 0; text-wrap:balance; overflow-wrap:break-word; }
 .setup-note {
   width:100%;
   max-width:520px;
