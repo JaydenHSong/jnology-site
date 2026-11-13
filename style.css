@@ -2134,3 +2134,8 @@ html[lang=ko] :is(.guide-page,.support-page) .document {
 html[lang=ko] .footer-guides {
   word-break:keep-all;
 }
+.document .guide-jump {
+  margin:-4px 0 28px;
+  font-size:15px;
+  font-weight:600;
+}
