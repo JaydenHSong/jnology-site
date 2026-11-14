@@ -73,8 +73,19 @@
   // Resolve before the body is parsed to avoid a flash of the wrong language.
   var initial = resolveLang();
   applyMetadata(initial);
+  // Deep links (e.g. an in-app QR) open the FAQ item: #empty-library, or its -ko twin in Korean.
+  function openHashTarget(lang) {
+    var id = '';
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+    if (!id) return;
+    var el = (lang === 'ko' && document.getElementById(id + '-ko')) || document.getElementById(id);
+    if (!el || el.tagName !== 'DETAILS') return;
+    el.open = true;
+    el.scrollIntoView();
+  }
   function init() {
     setLang(initial, true);
+    openHashTarget(initial);
     document.querySelectorAll('.lang-switch [data-lang]').forEach(function (a) {
       a.addEventListener('click', function (event) {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
