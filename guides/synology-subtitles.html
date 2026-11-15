@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- Set data-store to live at launch and data-beta to match index.html. -->
-<html lang="en" data-store="soon" data-beta="on" data-title-en="Synology NAS subtitles on iPhone, iPad and Apple TV" data-title-ko="Synology NAS 자막을 iPhone·iPad·Apple TV에서 보기" data-description-en="Embedded subtitles and same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station. Search OpenSubtitles with your own free API key, on Apple TV too." data-description-ko="Synology NAS의 내장 자막과 같은 이름의 자막 파일은 Video Station이 있어도 없어도 자동으로 켜집니다. 본인의 무료 OpenSubtitles API 키로 Apple TV에서도 자막을 찾습니다.">
+<html lang="en" data-store="soon" data-beta="on" data-title-en="Synology NAS subtitles on iPhone, iPad and Apple TV" data-title-ko="Synology NAS 자막을 iPhone·iPad·Apple TV에서 보기" data-description-en="Same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station; with Video Station, subtitles inside the video do too. Search OpenSubtitles with your own free API key, on Apple TV too." data-description-ko="Synology NAS의 같은 이름 자막 파일은 Video Station이 있어도 없어도 자동으로 켜지고, Video Station을 쓰면 영상 안 자막도 켜집니다. 본인의 무료 OpenSubtitles API 키로 Apple TV에서도 자막을 찾습니다.">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Synology NAS subtitles on iPhone, iPad and Apple TV</title>
-<meta name="description" content="Embedded subtitles and same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station. Search OpenSubtitles with your own free API key, on Apple TV too."><meta name="theme-color" content="#080c12"><meta name="color-scheme" content="dark">
-<link rel="canonical" href="https://ownstream.app/guides/synology-subtitles.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Ownstream"><meta property="og:title" content="Synology NAS subtitles on iPhone, iPad and Apple TV"><meta property="og:description" content="Embedded subtitles and same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station. Search OpenSubtitles with your own free API key, on Apple TV too."><meta property="og:url" content="https://ownstream.app/guides/synology-subtitles.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:image" content="https://ownstream.app/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Synology NAS subtitles on iPhone, iPad and Apple TV"><meta name="twitter:description" content="Embedded subtitles and same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station. Search OpenSubtitles with your own free API key, on Apple TV too."><meta name="twitter:image" content="https://ownstream.app/assets/og.jpg"><meta name="twitter:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<meta name="description" content="Same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station; with Video Station, subtitles inside the video do too. Search OpenSubtitles with your own free API key, on Apple TV too."><meta name="theme-color" content="#080c12"><meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://ownstream.app/guides/synology-subtitles.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Ownstream"><meta property="og:title" content="Synology NAS subtitles on iPhone, iPad and Apple TV"><meta property="og:description" content="Same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station; with Video Station, subtitles inside the video do too. Search OpenSubtitles with your own free API key, on Apple TV too."><meta property="og:url" content="https://ownstream.app/guides/synology-subtitles.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:image" content="https://ownstream.app/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Synology NAS subtitles on iPhone, iPad and Apple TV"><meta name="twitter:description" content="Same-name subtitle files on your Synology NAS turn on automatically, with or without Video Station; with Video Station, subtitles inside the video do too. Search OpenSubtitles with your own free API key, on Apple TV too."><meta name="twitter:image" content="https://ownstream.app/assets/og.jpg"><meta name="twitter:image:alt" content="Ownstream on iPhone, iPad and Apple TV">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"><link rel="stylesheet" href="../style.css"><script src="../lang.js"></script>
 <script type="application/ld+json">
 {
@@ -18,7 +18,7 @@
       "name": "Do I need Video Station for subtitles?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Embedded subtitles and same-name subtitle files work with Video Station and in File Mode, including on DSM 7.2.2 and later."
+        "text": "Not for subtitle files. Same-name subtitle files work with Video Station and in File Mode, including on DSM 7.2.2 and later. Subtitles inside the video (for example in MKV files) currently need Video Station."
       }
     },
     {
@@ -26,7 +26,7 @@
       "name": "Do I need an OpenSubtitles API key?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only to search OpenSubtitles online. Embedded subtitles and subtitle files already on your NAS work without a key. You can get a free key from OpenSubtitles and enter it in Settings."
+        "text": "Only to search OpenSubtitles online. Subtitle files already on your NAS, and subtitles inside the video with Video Station, work without a key. You can get a free key from OpenSubtitles and enter it in Settings."
       }
     },
     {
@@ -47,13 +47,13 @@
 <article class="document wrap">
 <p class="eyebrow"><span lang="en" data-i18n>GUIDES</span><span lang="ko" data-i18n>가이드</span></p>
 <h1><span lang="en" data-i18n>Synology NAS subtitles on iPhone, iPad and Apple TV</span><span lang="ko" data-i18n>Synology NAS 자막을 iPhone·iPad·Apple TV에서 보기</span></h1>
-<p><span lang="en" data-i18n>Ownstream finds subtitles embedded in your videos and subtitle files saved next to them on your Synology NAS, and turns them on automatically. It works with Video Station and without it, on iPhone, iPad and Apple TV. When a video has no subtitles, you can search OpenSubtitles with your own free API key.</span><span lang="ko" data-i18n>Ownstream은 영상 안에 들어 있는 자막과 Synology NAS에서 영상 옆에 둔 자막 파일을 찾아 자동으로 켭니다. Video Station이 있어도 없어도 iPhone·iPad·Apple TV에서 됩니다. 자막이 없는 영상은 본인의 무료 API 키로 OpenSubtitles에서 찾을 수 있습니다.</span></p>
+<p><span lang="en" data-i18n>Ownstream finds subtitle files saved next to your videos on your Synology NAS and turns them on automatically, with or without Video Station, on iPhone, iPad and Apple TV. With Video Station, subtitles inside the video turn on automatically too. When a video has no subtitles, you can search OpenSubtitles with your own free API key.</span><span lang="ko" data-i18n>Ownstream은 Synology NAS에서 영상 옆에 둔 자막 파일을 찾아 자동으로 켭니다. Video Station이 있어도 없어도 iPhone·iPad·Apple TV에서 됩니다. Video Station을 쓰면 영상 안 자막도 자동으로 켜집니다. 자막이 없는 영상은 본인의 무료 API 키로 OpenSubtitles에서 찾을 수 있습니다.</span></p>
 <p class="beta-note guide-jump"><a href="#beta-install"><span lang="en" data-i18n>Try the free public beta: installation steps ↓</span><span lang="ko" data-i18n>무료 공개 베타 시작하기: 설치 방법 ↓</span></a></p>
 <h2><span lang="en" data-i18n>Use subtitle files on your NAS</span><span lang="ko" data-i18n>NAS에 있는 자막 파일 쓰기</span></h2>
 <ol>
 <li><span lang="en" data-i18n>Put the subtitle file in the same folder as the video, with the same name. For example, <code>Movie.mp4</code> with <code>Movie.en.srt</code> or <code>Movie.smi</code>.</span><span lang="ko" data-i18n>자막 파일을 영상과 같은 폴더에 같은 이름으로 두세요. 예: <code>영상이름.mp4</code>와 <code>영상이름.ko.srt</code> 또는 <code>영상이름.smi</code>.</span></li>
-<li><span lang="en" data-i18n>Play the video. Matching subtitle files and subtitles embedded in the video are found and turned on automatically.</span><span lang="ko" data-i18n>영상을 재생하세요. 같은 이름의 자막 파일과 영상 안 자막을 찾아 자동으로 켭니다.</span></li>
-<li><span lang="en" data-i18n>This works with Video Station and in File Mode. File Mode needs no Video Station, only File Station permission for your DSM account.</span><span lang="ko" data-i18n>Video Station에서도, 파일 모드에서도 됩니다. 파일 모드는 Video Station 없이 DSM 계정의 File Station 권한만 있으면 됩니다.</span></li>
+<li><span lang="en" data-i18n>Play the video. The matching subtitle file is found and turned on automatically.</span><span lang="ko" data-i18n>영상을 재생하세요. 같은 이름의 자막 파일을 찾아 자동으로 켭니다.</span></li>
+<li><span lang="en" data-i18n>This works with Video Station and in File Mode. File Mode needs no Video Station, only File Station permission for your DSM account. Subtitles inside the video (for example in MKV files) show up only with Video Station for now.</span><span lang="ko" data-i18n>Video Station에서도, 파일 모드에서도 됩니다. 파일 모드는 Video Station 없이 DSM 계정의 File Station 권한만 있으면 됩니다. 영상 안 자막(예: MKV 안 자막)은 지금은 Video Station을 쓸 때만 나옵니다.</span></li>
 </ol>
 <h2><span lang="en" data-i18n>Find subtitles online</span><span lang="ko" data-i18n>인터넷에서 자막 찾기</span></h2>
 <p><span lang="en" data-i18n>Ownstream first searches OpenSubtitles by the video file’s fingerprint (hash), then by title. Searching OpenSubtitles requires your own OpenSubtitles API key in Settings. Results from the Video Station subtitle plug-in are shown too, but only plug-in subtitles already downloaded to the NAS can be used.</span><span lang="ko" data-i18n>OpenSubtitles에서 영상 파일의 지문(해시)으로 먼저 찾고, 없으면 제목으로 찾습니다. OpenSubtitles에서 찾으려면 설정에 본인의 OpenSubtitles API 키를 넣어야 합니다. Video Station 자막 플러그인 결과도 함께 보이지만, 이미 NAS에 받아 둔 플러그인 자막만 쓸 수 있습니다.</span></p>
@@ -64,11 +64,11 @@
 <h2><span lang="en" data-i18n>Frequently asked questions</span><span lang="ko" data-i18n>자주 묻는 질문</span></h2>
 <details>
 <summary><span lang="en" data-i18n>Do I need Video Station for subtitles?</span><span lang="ko" data-i18n>Video Station이 있어야 자막이 나오나요?</span></summary>
-<p><span lang="en" data-i18n>No. Embedded subtitles and same-name subtitle files work with Video Station and in File Mode, including on DSM 7.2.2 and later.</span><span lang="ko" data-i18n>아니요. 내장 자막과 같은 이름의 자막 파일은 Video Station에서도, 파일 모드에서도 됩니다. DSM 7.2.2 이상도 마찬가지입니다.</span></p>
+<p><span lang="en" data-i18n>Not for subtitle files. Same-name subtitle files work with Video Station and in File Mode, including on DSM 7.2.2 and later. Subtitles inside the video (for example in MKV files) currently need Video Station.</span><span lang="ko" data-i18n>자막 파일은 아닙니다. 같은 이름의 자막 파일은 Video Station에서도, 파일 모드에서도 됩니다. DSM 7.2.2 이상도 마찬가지입니다. 영상 안 자막(예: MKV 안 자막)은 지금은 Video Station이 있어야 나옵니다.</span></p>
 </details>
 <details>
 <summary><span lang="en" data-i18n>Do I need an OpenSubtitles API key?</span><span lang="ko" data-i18n>OpenSubtitles API 키가 꼭 있어야 하나요?</span></summary>
-<p><span lang="en" data-i18n>Only to search OpenSubtitles online. Embedded subtitles and subtitle files already on your NAS work without a key. You can get a free key from OpenSubtitles and enter it in Settings.</span><span lang="ko" data-i18n>인터넷에서 OpenSubtitles로 찾을 때만 필요합니다. 내장 자막과 NAS에 이미 있는 자막 파일은 키 없이 됩니다. 키는 OpenSubtitles에서 무료로 받아 설정에 넣으면 됩니다.</span></p>
+<p><span lang="en" data-i18n>Only to search OpenSubtitles online. Subtitle files already on your NAS, and subtitles inside the video with Video Station, work without a key. You can get a free key from OpenSubtitles and enter it in Settings.</span><span lang="ko" data-i18n>인터넷에서 OpenSubtitles로 찾을 때만 필요합니다. NAS에 이미 있는 자막 파일과, Video Station을 쓸 때의 영상 안 자막은 키 없이 됩니다. 키는 OpenSubtitles에서 무료로 받아 설정에 넣으면 됩니다.</span></p>
 </details>
 <details>
 <summary><span lang="en" data-i18n>Can I use subtitles from the Video Station subtitle plug-in?</span><span lang="ko" data-i18n>Video Station 자막 플러그인 자막도 쓸 수 있나요?</span></summary>
