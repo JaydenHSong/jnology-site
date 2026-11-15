@@ -79,13 +79,15 @@
     try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
     if (!id) return;
     var el = (lang === 'ko' && document.getElementById(id + '-ko')) || document.getElementById(id);
-    if (!el || el.tagName !== 'DETAILS') return;
-    el.open = true;
+    if (!el) return;
+    if (el.tagName === 'DETAILS') el.open = true;
     el.scrollIntoView();
   }
   function init() {
     setLang(initial, true);
     openHashTarget(initial);
+    // Re-run after images load: layout shifts can leave the target off screen.
+    window.addEventListener('load', function () { openHashTarget(html.lang); });
     document.querySelectorAll('.lang-switch [data-lang]').forEach(function (a) {
       a.addEventListener('click', function (event) {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
