@@ -733,6 +733,15 @@ html[lang=ko] .beta-howto {
 .section-heading .eyebrow {
   margin-bottom:20px;
 }
+.duo-shot {
+  max-width:880px;
+  margin:0 auto 32px;
+  padding:8px 8px 0;
+  border-radius:16px;
+}
+.duo-shot img {
+  border-radius:10px;
+}
 .feature-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
