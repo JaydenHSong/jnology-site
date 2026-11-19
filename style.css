@@ -733,14 +733,33 @@ html[lang=ko] .beta-howto {
 .section-heading .eyebrow {
   margin-bottom:20px;
 }
-.duo-shot {
-  max-width:880px;
+.duo-gallery {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  max-width:960px;
   margin:0 auto 32px;
-  padding:8px 8px 0;
+}
+.duo-shot {
+  margin:0;
+  padding:6px 6px 0;
   border-radius:16px;
 }
 .duo-shot img {
   border-radius:10px;
+}
+@media (max-width:640px) {
+  .duo-gallery {
+    grid-template-columns:none;
+    grid-auto-flow:column;
+    grid-auto-columns:72%;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:12px;
+  }
+  .duo-shot {
+    scroll-snap-align:start;
+  }
 }
 .feature-grid {
   display:grid;
